@@ -1,0 +1,57 @@
+{
+  "function": {
+    "name": "Rotation",
+    "namespace": "TcHmi.Functions.Ej_Iconos",
+    "displayName": "Rotation",
+    "description": "Set speed rotation",
+    "waitMode": "Synchronous",
+    "category": "Animation",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "id_image",
+        "displayName": "id_image",
+        "type": "tchmi:general#/definitions/String",
+        "description": "id del objeto a rotar",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "velocity",
+        "displayName": "velocity",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "grados por frame y puede ser negativo",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": true,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.14.3.258/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "Rotacion.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}

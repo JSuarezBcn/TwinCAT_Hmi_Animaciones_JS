@@ -1,0 +1,58 @@
+{
+  "function": {
+    "name": "Countdown",
+    "namespace": "TcHmi.Functions.PrHmi_Animaciones",
+    "displayName": "Countdown",
+    "description": "Show count down value for a textbox",
+    "waitMode": "Synchronous",
+    "category": "Animation",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Number",
+      "description": ""
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "idTextblock",
+        "displayName": "idTextblock",
+        "type": "tchmi:general#/definitions/String",
+        "description": "object id",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "preset",
+        "displayName": "preset",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "time preset",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.14.3.431/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "Countdown.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}

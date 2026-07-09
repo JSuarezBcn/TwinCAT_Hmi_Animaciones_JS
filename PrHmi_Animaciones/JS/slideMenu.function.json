@@ -1,0 +1,57 @@
+{
+  "function": {
+    "name": "slideMenu",
+    "namespace": "TcHmi.Functions.PrHmi_Animaciones",
+    "displayName": "slideMenu",
+    "description": "Slide menu ",
+    "waitMode": "Synchronous",
+    "category": "Animation",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "id",
+        "displayName": "id",
+        "type": "tchmi:general#/definitions/String",
+        "description": "id menu",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "moveX",
+        "displayName": "move X",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "px position",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.14.3.431/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "slide.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}
