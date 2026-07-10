@@ -30,3 +30,5 @@ Proyecto de TwinCAT HMI con diferentes funciones javascript y estilos css para r
 
 &#x20; \* menú deslizante de contenido tipo 'carrusel'
 
+&#x20; \* Animaciones de movimiento y sombra de movers Xplanar
+

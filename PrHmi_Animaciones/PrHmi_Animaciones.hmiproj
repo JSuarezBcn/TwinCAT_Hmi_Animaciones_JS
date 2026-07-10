@@ -132,6 +132,23 @@
   <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <ItemGroup>
+    <Content Include="Contents\xplanar_layout2x1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="JS\ShadowMover.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>JS\ShadowMover.js</DependentUpon>
+    </Content>
+    <Content Include="JS\ShadowMover.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UC\planarMover.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UC\planarMover.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UC\planarMover.usercontrol</DependentUpon>
+    </Content>
     <Folder Include="Fonts\" />
     <Folder Include="Images" />
     <Folder Include="Images\Manifest" />
@@ -142,6 +159,7 @@
     <Folder Include="Localization" />
     <Folder Include="JS" />
     <Folder Include="Contents" />
+    <Folder Include="UC" />
     <Folder Include="Themes" />
     <Folder Include="Themes\Base-Dark\Images\" />
     <Folder Include="Themes\Base\" />
@@ -162,6 +180,9 @@
     <Content Include="Contents\Content2.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Contents\xplanar.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\axis.svg">
       <SubType>Content</SubType>
     </Content>
@@ -175,6 +196,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\menue_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\planarMover.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\XPlanar_2x1_bkg.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="JS\blink.function.json">

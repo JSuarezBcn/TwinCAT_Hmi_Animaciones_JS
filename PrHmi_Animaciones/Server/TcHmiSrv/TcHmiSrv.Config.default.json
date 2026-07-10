@@ -2750,6 +2750,82 @@
             },
             "USEMAPPING": true
         },
+        "Mover1axisC": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "TcHmiSrv",
+            "DYNAMIC": true,
+            "MAPPING": "",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/Number"
+                    },
+                    {
+                        "default": 0.0
+                    }
+                ]
+            },
+            "USEMAPPING": false
+        },
+        "Mover1axisX": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "TcHmiSrv",
+            "DYNAMIC": true,
+            "MAPPING": "",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/Number"
+                    },
+                    {
+                        "default": 0.0
+                    }
+                ]
+            },
+            "USEMAPPING": false
+        },
+        "Mover1axisY": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "TcHmiSrv",
+            "DYNAMIC": true,
+            "MAPPING": "",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/Number"
+                    },
+                    {
+                        "default": 0.0
+                    }
+                ]
+            },
+            "USEMAPPING": false
+        },
+        "Mover1axisZ": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "TcHmiSrv",
+            "DYNAMIC": true,
+            "MAPPING": "",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/Number"
+                    },
+                    {
+                        "default": 0.0
+                    }
+                ]
+            },
+            "USEMAPPING": false
+        },
         "RefreshDefinitions": {
             "ACCESS": 3,
             "DOMAIN": "TcHmiSrv",
@@ -3868,6 +3944,10 @@
                 "LocalizeText": 3,
                 "Login": 3,
                 "Logout": 3,
+                "Mover1axisC": 3,
+                "Mover1axisX": 3,
+                "Mover1axisY": 3,
+                "Mover1axisZ": 3,
                 "SetLocale": 3,
                 "SubscribeEvents": 3,
                 "TcHmiSqliteLogger.Diagnostics": 3,

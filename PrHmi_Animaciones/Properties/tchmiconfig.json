@@ -87,6 +87,11 @@
       "type": "JavaScript"
     },
     {
+      "name": "JS/ShadowMover.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
       "name": "JS/slideCarrousel.js",
       "description": "",
       "type": "JavaScript"
@@ -97,7 +102,11 @@
       "type": "JavaScript"
     }
   ],
-  "userControls": [],
+  "userControls": [
+    {
+      "url": "UC/planarMover.usercontrol"
+    }
+  ],
   "controls": [],
   "content": [
     {
@@ -116,6 +125,20 @@
     },
     {
       "url": "Contents/Content2.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Contents/xplanar.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Contents/xplanar_layout2x1.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -139,6 +162,9 @@
     },
     {
       "url": "JS/Rotation.js"
+    },
+    {
+      "url": "JS/ShadowMover.js"
     },
     {
       "url": "JS/slideCarrousel.js"

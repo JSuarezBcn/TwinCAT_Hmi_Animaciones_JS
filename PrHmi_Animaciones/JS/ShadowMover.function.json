@@ -1,0 +1,57 @@
+{
+  "function": {
+    "name": "ShadowMover",
+    "namespace": "TcHmi.Functions.XplanarMiniHmi",
+    "displayName": "ShadowMover",
+    "description": "Dynamic drop shadow of planar mover",
+    "waitMode": "Synchronous",
+    "category": "Animation",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Null"
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "posZ",
+        "displayName": "posZ",
+        "type": "tchmi:general#/definitions/LREAL",
+        "description": "Elevation",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "id",
+        "displayName": "id",
+        "type": "tchmi:general#/definitions/String",
+        "description": "id control planar mover",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.54/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "ShadowMover.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}

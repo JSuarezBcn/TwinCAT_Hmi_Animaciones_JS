@@ -7,3 +7,12 @@
         background: red;
     }
 }
+
+/* propiuedad para añadir sombra a los planars movers. Los objetos img de los movers deben tener añadida esta clase */
+.planarMover {
+    -webkit-filter: drop-shadow( 5px 5px 5px #808080);
+    filter: drop-shadow( 5px 5px 5px #808080);
+    /* Similar syntax to box-shadow */
+    /*width: 140px;     */
+    /*height: 140px;    */
+}

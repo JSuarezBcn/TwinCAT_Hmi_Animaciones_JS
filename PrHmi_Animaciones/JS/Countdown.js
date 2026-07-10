@@ -24,7 +24,6 @@
                     }
                 }, 1000);
 
-
             }
             PrHmi_Animaciones.Countdown = Countdown;
         })(PrHmi_Animaciones = Functions.PrHmi_Animaciones || (Functions.PrHmi_Animaciones = {}));

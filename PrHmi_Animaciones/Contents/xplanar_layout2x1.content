@@ -1,0 +1,47 @@
+<div id="xplanar_layout2x1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="480" data-tchmi-height="240">
+
+<div id="TcHmiContainer_4" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+<div id="imgXplanar2x1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-src="Imports/Images/XPlanar_2x1_bkg.svg">
+</div>
+<div id="imgMover_1" class="planarMover" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="114" data-tchmi-height-unit="px" data-tchmi-left="%s%Mover1axisX|Interval=100%/s%" data-tchmi-left-unit="px" data-tchmi-top="%s%Mover1axisY|Interval=100%/s%" data-tchmi-top-unit="px" data-tchmi-width="114" data-tchmi-width-unit="px" data-tchmi-src="Imports/Images/planarMover.svg">
+
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angleUnit": "deg",
+    "angle": "%s%Mover1axisC|Interval=100%/s%"
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%f%%s%Mover1axisZ|Interval=100%/s%%/f%",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.XplanarMiniHmi.ShadowMover",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%Mover1axisZ%/s%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": "imgMover_1"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>
+</div>
